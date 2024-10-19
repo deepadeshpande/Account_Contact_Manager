@@ -10,7 +10,7 @@ User-friendly error messages for validation failures.
 Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web Components) for future flexibility.
 
 
-             Working functionality scenario using code-based approach
+             Working functionality scenario using a code-based approach
 
 1. Created Data model to link the account to custom object (Contact type)
    <img width="953" alt="image" src="https://github.com/user-attachments/assets/25dbe95f-893b-4dfa-a1b8-77e0451b4d9c">
@@ -29,8 +29,7 @@ Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web C
 
 
                Partially developed using a declarative tool (Flow) & highlighting the challenges below.
-
-   1. Fetcing the unique combination of Type & State for the contacts
+ 1. Fetcing the unique combination of Type & State for the contacts
       <img width="956" alt="image" src="https://github.com/user-attachments/assets/3125ead9-6086-4e92-a213-1f41c41df2a2">
       Issue:
       I)Multiple loops, decision elements, assignment which slow down the performance in the long run if it has a large dataset of records
@@ -38,18 +37,16 @@ Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web C
       may be challenging to track down where the problem occurred.
       III) Error handling cannot be done efficiently on flow, because it has a basic element called FAULT path.
       Iv) One of the biggest challenges we encountered was the difference between text and record collections. When passing data between flows 
-       or subflows, I needed to pass collections of records (with fields like Type, State, and Number of Contacts), but I initially dealt with text collections that caused limitations in using 
+      or subflows, I needed to pass collections of records (with fields like Type, State, and Number of Contacts), but I initially dealt with text collections that caused limitations in using 
       declarative tools like the data table component. This required additional manipulation, which added complexity.
-
  2. Created sub-flow for creating/updating the fields Type, State, Contact Count in Contact_Type__c custom object
-   <img width="351" alt="image" src="https://github.com/user-attachments/assets/d5dc7f57-ebb0-411b-aae8-681c076424a8">
-   Issue: Unable to pass the text collection variable to subflow as highlighted above.
-
+      <img width="351" alt="image" src="https://github.com/user-attachments/assets/d5dc7f57-ebb0-411b-aae8-681c076424a8">
+      Issue: Unable to pass the text collection variable to subflow as highlighted above.
 3. This is just created to show datatable is not natively available, workaround would be to use multiselect picklist or checbox group , but again it will not look like
-   datatable, hence UI is not feasible...but the biggest challenge is again the text/record collection variable
-  <img width="251" alt="image" src="https://github.com/user-attachments/assets/82e6cbd7-d245-46b7-8bc5-c8132e6471e7">
+     datatable, hence UI is not feasible...but the biggest challenge is again the text/record collection variable
+     <img width="251" alt="image" src="https://github.com/user-attachments/assets/82e6cbd7-d245-46b7-8bc5-c8132e6471e7">
 
-  To achieve the above requirement using a declarative tool would not be feasible because of the complexity involved. 
+     To achieve the above requirement using a declarative tool would not be feasible because of the complexity involved. 
 
 
    
