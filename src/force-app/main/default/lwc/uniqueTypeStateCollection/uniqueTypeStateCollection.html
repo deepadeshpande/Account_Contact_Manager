@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Contact Type and State">
+        <template if:true={hasData}>
+            <lightning-datatable
+                key-field="id"
+                data={typeStateData}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </template>
+        <template if:false={hasData}>
+            <p>No records to display</p>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,31 @@
+<!-- created as part of assignment -->
+
+<template>
+    <lightning-card title="Contact Type and State" icon-name="standard:account">
+        
+        <!-- Display datatable when items are available -->
+        <template if:true={contactTypeData.length}>
+            <div class="datatable-container">
+                <lightning-datatable
+                    key-field="id"
+                    data={contactTypeData}
+                    columns={columns}
+                   column-widths-mode="fixed"
+                    onrowselection={handleRowSelection}
+                ></lightning-datatable>
+
+                <!-- Button to process selected rows -->
+                <lightning-button 
+                    label="Process Selected" 
+                    variant="brand" 
+                    onclick={handleProcessSelected}>
+                </lightning-button>
+            </div>
+        </template>
+
+        <!-- Display error message if there is an error -->
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+    </lightning-card>
+</template>
