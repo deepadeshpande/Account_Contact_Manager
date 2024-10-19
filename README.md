@@ -27,6 +27,9 @@ Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web C
    <img width="959" alt="image" src="https://github.com/user-attachments/assets/dd63390b-727e-48c4-acc1-d0764fec2dc8">
 6. If the number of contacts exceeds 5, then display user user-friendly error message
    ![image](https://github.com/user-attachments/assets/d80024b3-bb65-4f7f-bf42-3667aaca58ea)
+7. If none of the rows is selected & clicked on the process selected, display the user-friendly error msg
+   <img width="940" alt="image" src="https://github.com/user-attachments/assets/5daf1a35-7719-4df0-ba68-7e09ecddd167">
+
 
 
                Partially developed using a declarative tool (Flow) & highlighting the challenges below.
