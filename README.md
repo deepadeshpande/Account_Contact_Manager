@@ -10,7 +10,7 @@ User-friendly error messages for validation failures.
 Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web Components) for future flexibility.
 
 
-             Working functionality scenario using code-based
+             Working functionality scenario using code-based approach
 
 1. Created Data model to link the account to custom object (Contact type)
    <img width="953" alt="image" src="https://github.com/user-attachments/assets/25dbe95f-893b-4dfa-a1b8-77e0451b4d9c">
@@ -28,7 +28,7 @@ Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web C
    ![image](https://github.com/user-attachments/assets/d80024b3-bb65-4f7f-bf42-3667aaca58ea)
 
 
-               Partially developed using a declarative tool (Flow) & highlighting the challenges below
+               Partially developed using a declarative tool (Flow) & highlighting the challenges below.
 
    1. Fetcing the unique combination of Type & State for the contacts
       <img width="956" alt="image" src="https://github.com/user-attachments/assets/3125ead9-6086-4e92-a213-1f41c41df2a2">
