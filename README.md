@@ -46,11 +46,11 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
       or subflows, I needed to pass collections of records (with fields like Type, State, and Number of Contacts), but I initially dealt with text collections that caused limitations in using 
       declarative tools like the data table component. This required additional manipulation, which added complexity.
  2. Created sub-flow for creating/updating the fields Type, State, Contact Count in Contact_Type__c custom object
-      <img width="403" alt="image" src="https://github.com/user-attachments/assets/6ca700be-3660-43f3-a40e-99c24fed6ec0">
+      <img width="377" alt="image" src="https://github.com/user-attachments/assets/f45042dc-a155-423f-bf95-05cdb3c837b7">
       Issue: Unable to pass the text collection variable to subflow as highlighted above.
-3. Data table created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
-   datatable always accepts the record collection.
-   Biggest drawback: The datatable will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
+3. Data table is created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
+   data table always accepts the record collection.
+   Biggest drawback: The data table will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
     <img width="872" alt="image" src="https://github.com/user-attachments/assets/841cdd9a-1f60-421a-b099-f3609580696a">
 
 
