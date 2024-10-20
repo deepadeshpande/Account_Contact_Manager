@@ -51,7 +51,15 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
 3. Data table is created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
    data table always accepts the record collection.
    Biggest drawback: The data table will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
-    <img width="872" alt="image" src="https://github.com/user-attachments/assets/841cdd9a-1f60-421a-b099-f3609580696a">
+    <img width="725" alt="image" src="https://github.com/user-attachments/assets/cbd989ee-257e-4bb2-84bb-9b61759f400b">
+
+    once clubbed all the subflow, this is how it looks
+    <img width="374" alt="image" src="https://github.com/user-attachments/assets/296c36b9-7ffe-464c-b220-65b3673462e4">
+
+    created button to invoke the flow
+<img width="917" alt="image" src="https://github.com/user-attachments/assets/a475c2c2-9b95-40db-bc16-b1657e4e1f7c">
+
+
 
 
 
