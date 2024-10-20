@@ -50,6 +50,7 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
       Issue: Unable to pass the text collection variable to subflow as highlighted above.
 3. Data table created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
    datatable always accepts the record collection.
+   Biggest drawback: The datatable will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
     <img width="872" alt="image" src="https://github.com/user-attachments/assets/841cdd9a-1f60-421a-b099-f3609580696a">
 
 
