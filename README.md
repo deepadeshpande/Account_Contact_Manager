@@ -50,7 +50,8 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
       Issue: Unable to pass the text collection variable to subflow as highlighted above.
 3. This is just created to show data table is not natively available, a workaround would be to use a multi-select picklist or checkbox group, but again it will not look like
      a data table, hence UI is not feasible...but the biggest challenge is again the text/record collection variable
-     <img width="251" alt="image" src="https://github.com/user-attachments/assets/82e6cbd7-d245-46b7-8bc5-c8132e6471e7">
+     <img width="856" alt="image" src="https://github.com/user-attachments/assets/6a7f8666-ac58-4cb5-bc3d-1f5d0755f61b">
+
 
      To achieve the above requirement using a declarative tool is possible , but leads to lot of complexity 
 
