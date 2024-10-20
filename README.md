@@ -48,9 +48,10 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
  2. Created sub-flow for creating/updating the fields Type, State, Contact Count in Contact_Type__c custom object
       <img width="403" alt="image" src="https://github.com/user-attachments/assets/6ca700be-3660-43f3-a40e-99c24fed6ec0">
       Issue: Unable to pass the text collection variable to subflow as highlighted above.
-3. This is just created to show data table is not natively available, a workaround would be to use a multi-select picklist or checkbox group, but again it will not look like
-     a data table, hence UI is not feasible...but the biggest challenge is again the text/record collection variable
-     <img width="856" alt="image" src="https://github.com/user-attachments/assets/6a7f8666-ac58-4cb5-bc3d-1f5d0755f61b">
+3. Data table created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
+   datatable always accepts the record collection.
+    <img width="872" alt="image" src="https://github.com/user-attachments/assets/841cdd9a-1f60-421a-b099-f3609580696a">
+
 
 
      To achieve the above requirement using a declarative tool is possible , but leads to lot of complexity 
