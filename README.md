@@ -1,13 +1,14 @@
 # Account_Contact_Manager
 This requirement implements a salesforce solution to manage and track the number of Contacts by Contact Type for each Account. 
 Features:
-Custom button (Contact type) on Account record to trigger a LWC 
-LWC displays a table of unique Contact Types based on Type and State for the selected Account.
-Multiple contact types can be selected.
-Creates or updates a custom object for unique combinations of Account, Type, and State.
-Enforces validation rules to ensure the number of Contacts per combination does not exceed 5.
-User-friendly error messages for validation failures.
-Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web Components) for future flexibility.
+
+a)Custom button (Contact type) on Account record to trigger a LWC 
+b)LWC displays a table of unique Contact Types based on Type and State for the selected Account.
+c)Multiple contact types can be selected.
+d)Creates or updates a custom object for unique combinations of Account, Type, and State.
+e)Enforces validation rules to ensure the number of Contacts per combination does not exceed 5.
+f)User-friendly error messages for validation failures.
+g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web Components) for future flexibility.
 
 
              Working functionality scenario using a code-based approach
