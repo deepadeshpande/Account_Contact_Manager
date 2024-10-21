@@ -19,16 +19,17 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
 2. Created new quick action button (contact type) on Account object
    <img width="926" alt="image" src="https://github.com/user-attachments/assets/2e0a2987-4a8a-454f-afe6-f5b97a9d0966">
 3. Created dummy data which consists of the unique combination of Type & State
-   <img width="637" alt="image" src="https://github.com/user-attachments/assets/c856fc21-c7fc-4f74-826e-9ef27e396832">
+   <img width="632" alt="image" src="https://github.com/user-attachments/assets/0d248f8b-25fa-49a3-bc51-ab685282c884">
 4. Click on the button Contact Type, display the Type, State and # of contacts with the row selectable option
    <img width="590" alt="image" src="https://github.com/user-attachments/assets/5ab41722-5945-4b02-a540-c8684d35249d">
 5. Click on the process selected, display success validation for further processing where it checks if a unique combination exists, updates the number of contacts else creates a record
    ![image](https://github.com/user-attachments/assets/e57d16e4-0c58-4d4b-81d5-fa52dee86081)
 5. In this case, the new record & existing record are updated, and for the first time, the record is created & for existing contact the contact count is updated in the new custom object Contact_Type__c
+   also created list view to view the records at one go
    <img width="959" alt="image" src="https://github.com/user-attachments/assets/dd63390b-727e-48c4-acc1-d0764fec2dc8">
-6. If the number of contacts exceeds 5, then display user user-friendly error message
+7. If the number of contacts exceeds 5, then display user user-friendly error message
    ![image](https://github.com/user-attachments/assets/d80024b3-bb65-4f7f-bf42-3667aaca58ea)
-7. If none of the rows is selected & clicked on the process selected, display the user-friendly error msg
+8. If none of the rows is selected & clicked on the process selected, display the user-friendly error msg
    <img width="940" alt="image" src="https://github.com/user-attachments/assets/5daf1a35-7719-4df0-ba68-7e09ecddd167">
 
 
