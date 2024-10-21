@@ -62,7 +62,9 @@ Biggest drawback: The data table will only display the first 2000 records in the
 
 
 once clubbed all the subflow, this is how it looks
+
 <img width="374" alt="image" src="https://github.com/user-attachments/assets/296c36b9-7ffe-464c-b220-65b3673462e4">
+
 created a button to invoke the flow
 <img width="917" alt="image" src="https://github.com/user-attachments/assets/a475c2c2-9b95-40db-bc16-b1657e4e1f7c">
 NOTE:To achieve the above requirement using a declarative tool is possible, but it leads to a lot of complexity 
