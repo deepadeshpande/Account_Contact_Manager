@@ -40,29 +40,28 @@ g)Uses a mix of declarative tools (Flow) and custom code (Apex and Lightning Web
 
                Partially developed using a declarative tool (Flow) & highlighting the challenges below.
    
- 1. Fetcing the unique combination of Type & State for the contacts
-      <img width="956" alt="image" src="https://github.com/user-attachments/assets/3125ead9-6086-4e92-a213-1f41c41df2a2">
-      Issue:
-      I)Multiple loops, decision elements, assignments which slow down the performance in the long run if it has a large dataset of records
-      II) Debugging complexity -> With multiple loops & decision element flow becomes quite complex to debug,  If a combination isn’t added correctly or if the flow breaks due to an error, it 
-      may be challenging to track down where the problem occurred.
-      III) Error handling cannot be done efficiently on flow, because it has a basic element called FAULT path.
-      Iv) One of the biggest challenges encountered was the difference between text and record collections. When passing data between flows 
-      or subflows, I needed to pass collections of records (with fields like Type, State, and Number of Contacts), but I initially dealt with text collections that caused limitations in using 
-      declarative tools like the data table component. This required additional manipulation, which added complexity.
- 2. Created sub-flow for creating/updating the fields Type, State, Contact Count in Contact_Type__c custom object
-      <img width="377" alt="image" src="https://github.com/user-attachments/assets/f45042dc-a155-423f-bf95-05cdb3c837b7">
-      Issue: Unable to pass the text collection variable to subflow as highlighted above.
-3. Data table is created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record collection variable
-   data table always accepts the record collection.
-   Biggest drawback: The data table will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
-    <img width="725" alt="image" src="https://github.com/user-attachments/assets/cbd989ee-257e-4bb2-84bb-9b61759f400b">
-
-    once clubbed all the subflow, this is how it looks
-    <img width="374" alt="image" src="https://github.com/user-attachments/assets/296c36b9-7ffe-464c-b220-65b3673462e4">
-
-    created button to invoke the flow
+1.Fetcing the unique combination of Type & State for the contacts
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/3125ead9-6086-4e92-a213-1f41c41df2a2">
+Issues:
+I)Multiple loops, decision elements, assignments which slow down the performance in the long run if it has a large dataset of records
+II)Debugging complexity -> With multiple loops & decision element flow becomes quite complex to debug,  If a combination isn’t added correctly or if the flow breaks due to an error, it 
+may be challenging to track down where the problem occurred.
+III)Error handling cannot be done efficiently on flow, because it has a basic element called FAULT path.
+Iv)One of the biggest challenges encountered was the difference between text and record collections. When passing data between flows 
+or subflows, I needed to pass collections of records (with fields like Type, State, and Number of Contacts), but I initially dealt with text collections that caused limitations in using 
+declarative tools like the data table component. This required additional manipulation, which added complexity.
+2.Created sub-flow for creating/updating the fields Type, State, Contact Count in Contact_Type__c custom object
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/f45042dc-a155-423f-bf95-05cdb3c837b7">
+Issue: Unable to pass the text collection variable to subflow as highlighted above.
+3.A data table is created to display data from the contact object, however here we need to pass the output from main flow to subflow, or can add screensflow inside the mainflow,..but the biggest challenge is again the text/record 
+collection variable data table always accepts the record collection.
+Biggest drawback: The data table will only display the first 2000 records in the input collection. A collection passed in with more than 2000 records could cause an Apex CPU time limit exceeded error.
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/cbd989ee-257e-4bb2-84bb-9b61759f400b">
+once clubbed all the subflow, this is how it looks
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/296c36b9-7ffe-464c-b220-65b3673462e4">
+created a button to invoke the flow
 <img width="917" alt="image" src="https://github.com/user-attachments/assets/a475c2c2-9b95-40db-bc16-b1657e4e1f7c">
+NOTE:To achieve the above requirement using a declarative tool is possible, but it leads to a lot of complexity 
 
 
 
